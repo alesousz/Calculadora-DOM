@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main class="dark">
+      <button title="trocando cor" class="trocaDeCor">
+        <img src="" alt="" />
+        <p></p>
+      </button>
+      <div class="calculadora">
+        <header><h1 class="titulo-calculadora">Calculadora</h1></header>
+        <div class="resposta-calc">
+          <input type="text" class="inputFieldDark" disabled />
+        </div>
+        <div class="teclado">
+          <div><button type="reset" class="reset">C</button></div>
+          <div><button value=" ( ">(</button></div>
+          <div><button value=" ) ">)</button></div>
+          <div><button id="divisao" value=" / ">/</button></div>
+          <!-- Parte 0 -->
+          <div><button value="7">7</button></div>
+          <div><button value="8">8</button></div>
+          <div><button value="9">9</button></div>
+          <div><button id="multiplicacao" value=" * ">*</button></div>
+          <!-- Parte 1 -->
+          <div><button value="4">4</button></div>
+          <div><button value="5">5</button></div>
+          <div><button value="6">6</button></div>
+          <div><button id="subtracao" value=" - ">-</button></div>
+          <!-- Parte 2 -->
+          <div><button value="1">1</button></div>
+          <div><button value="2">2</button></div>
+          <div><button value="3">3</button></div>
+          <div><button id="soma" value=" + ">+</button></div>
+          <!-- Parte 3 -->
+          <div><button value="0">0</button></div>
+          <div><button value=",">,</button></div>
+          <div><button value=" % ">mod</button></div>
+          <div><button class="igual">=</button></div>
+        </div>
+      </div>
+      <div class="registros">
+        <div class="titulo-registros"><h1>Registros</h1></div>
+        <div class="conteudo-registros"></div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

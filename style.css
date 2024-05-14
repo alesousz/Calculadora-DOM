@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+}
+
+.trocaDeCor {
+  position: absolute;
+  bottom: 90%;
+  right: 85%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.trocaDeCor img {
+  height: 20px;
+  width: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+}
+
+.dark {
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+.dark input {
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+  text-align: right;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 30px;
+  color: white;
+}
+
+.dark button {
+  border: 2px solid rgb(194, 193, 193);
+}
+
+.claro {
+  background-color: white;
+  color: black;
+}
+.claro input {
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+  text-align: right;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid rgb(12, 10, 10);
+  font-size: 30px;
+  color: rgb(14, 11, 11);
+}
+.claro button {
+  border: 2px solid rgb(10, 9, 9);
+}
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.resposta-calc {
+  width: 100%;
+}
+
+.teclado {
+  display: grid;
+  grid-template-areas:
+    "C abre-parenteses fecha-parenteses divisao"
+    "sete oito nove multiplicação"
+    "quatro cinco seis subtracao"
+    "um dois tres soma"
+    "zero ponto mod igual";
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.teclado button {
+  background-color: rgb(102, 102, 190);
+  width: 90px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+}
+
+.teclado button:hover {
+  opacity: 0.5;
+}
+
+.registros {
+  height: 437px;
+  width: 300px;
+}
+
+.titulo-registros {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.conteudo-registros {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 300px;
+  height: 380px;
+  padding: 5px;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.conteudo-registros-claro {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid rgb(17, 14, 14);
+  width: 300px;
+  height: 380px;
+  padding: 5px;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.conteudo-registros.dark .registro-conta {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.conteudo-registros.claro .registro-conta {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid black;
+}
